@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snow Blasters</title>
-    <link rel="icon" href="data:,">  <!-- Prevents favicon error -->
+    <link rel="icon" href="data:,">
     <style>
         body {
             margin: 0;
@@ -30,24 +30,14 @@
 </head>
 <body>
     <div class="game-container">
-        <iframe 
-            src="https://itch.io/embed-upload/11789652?color=333333" 
+        <iframe
+            frameborder="0" 
+            src="https://itch.io/embed/[YOUR-GAME-ID]?dark=true"
             allowfullscreen 
-            allow="cross-origin-isolated; cross-origin-embedder-policy"
             width="2048" 
-            height="1120"
-            loading="eager"
-            importance="high"
-            referrerpolicy="origin">
+            height="1120">
             <a href="https://ryanconnolly.itch.io/snowblasters">Play Snow Blasters on itch.io</a>
         </iframe>
     </div>
-
-    <script>
-        // Add error handling
-        window.addEventListener('error', function(e) {
-            console.log('Error:', e.message);
-        });
-    </script>
 </body>
 </html>

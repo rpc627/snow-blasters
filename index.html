@@ -13,72 +13,29 @@
             align-items: center;
             min-height: 100vh;
             background-color: #333;
-            font-family: Arial, sans-serif;
-            color: white;
         }
         .game-container {
-            width: 90%;
+            width: 100%;
             max-width: 2048px;
-            height: 90vh;
+            height: 100vh;
             max-height: 1120px;
-            background: #1a1a1a;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            text-align: center;
         }
-        .game-title {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #FF4F4F;
-        }
-        .play-button {
-            background: #FF4F4F;
-            color: white;
+        iframe {
+            width: 100%;
+            height: 100%;
             border: none;
-            padding: 15px 30px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1.2em;
-            transition: all 0.3s ease;
-            margin: 20px 0;
-        }
-        .play-button:hover {
-            background: #FF3333;
-            transform: scale(1.05);
-        }
-        .game-description {
-            max-width: 600px;
-            line-height: 1.6;
-            margin: 20px 0;
-        }
-        .preview-image {
-            max-width: 80%;
-            height: auto;
-            border-radius: 5px;
-            margin: 20px 0;
         }
     </style>
 </head>
 <body>
     <div class="game-container">
-        <h1 class="game-title">Snow Blasters</h1>
-        <div class="game-description">
-            Experience intense snowball battles in this exciting multiplayer game! 
-            Launch the game to play in full screen with proper WebGL support.
-        </div>
-        <button class="play-button" onclick="launchGame()">Launch Game</button>
-        <p>For the best experience, the game will open in a new tab with full WebGL support.</p>
+        <iframe 
+            src="https://itch.io/embed-upload/11789652?color=333333" 
+            allowfullscreen="" 
+            width="2048" 
+            height="1120">
+            <a href="https://ryanconnolly.itch.io/snowblasters">Play Snow Blasters on itch.io</a>
+        </iframe>
     </div>
-
-    <script>
-        function launchGame() {
-            window.open('https://itch.io/embed-upload/11789652?color=333333&uuid=0c7be8d17f56cba0a574df9bfc660e8b', '_blank');
-        }
-    </script>
 </body>
 </html>

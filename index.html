@@ -61,7 +61,11 @@
             allowfullscreen="" 
             width="2048" 
             height="1120"
-            sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms allow-popups allow-popups-to-escape-sandbox">
+            allow="cross-origin-isolated"
+            sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms allow-popups allow-popups-to-escape-sandbox"
+            loading="eager"
+            importance="high"
+            referrerpolicy="origin">
             <a href="https://ryanconnolly.itch.io/snowblasters">Play Snow Blasters on itch.io</a>
         </iframe>
         <button class="fullscreen-btn" onclick="toggleFullscreen()">Fullscreen</button>

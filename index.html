@@ -13,25 +13,69 @@
             align-items: center;
             min-height: 100vh;
             background-color: #333;
+            color: white;
+            font-family: Arial, sans-serif;
         }
         .game-container {
-            width: 100%;
+            width: 90%;
             max-width: 2048px;
-            height: 100vh;
+            height: 90vh;
             max-height: 1120px;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+        .game-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: #1a1a1a;
+        }
+        .header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 10px 20px;
+            background: rgba(0,0,0,0.8);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        .play-button {
+            background: #FF4F4F;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .play-button:hover {
+            background: #FF3333;
+        }
+        .game-info {
+            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <div class="game-container">
-        <!-- Game will be embedded here -->
+        <div class="header">
+            <h2>Snow Blasters</h2>
+            <button class="play-button" onclick="window.open('https://ryanconnolly.itch.io/snowblasters', '_blank')">
+                Play Full Screen
+            </button>
+        </div>
+        <iframe 
+            class="game-frame"
+            src="https://ryanconnolly.itch.io/snowblasters" 
+            allowfullscreen>
+        </iframe>
     </div>
-
-    <script type="text/javascript">
-        window.onload = function() {
-            // Redirect to the actual itch.io game page
-            window.location.href = "https://ryanconnolly.itch.io/snowblasters";
-        }
-    </script>
 </body>
 </html>

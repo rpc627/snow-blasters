@@ -20,22 +20,18 @@
             height: 100vh;
             max-height: 1120px;
         }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
     </style>
 </head>
 <body>
     <div class="game-container">
-       <iframe frameborder="0"
-                src="https://itch.io/embed-upload/11789652?color=333333" 
-                allowfullscreen="" 
-                width="2048" 
-                height="1120">
-            <a href="https://ryanconnolly.itch.io/snowblasters">Play Snow Blasters on itch.io</a>
-        </iframe>
+        <!-- Game will be embedded here -->
     </div>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            // Redirect to the actual itch.io game page
+            window.location.href = "https://ryanconnolly.itch.io/snowblasters";
+        }
+    </script>
 </body>
 </html>

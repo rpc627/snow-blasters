@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snow Blasters</title>
     <link rel="icon" href="data:,">
+    <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp">
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
     <style>
         body {
             margin: 0;
@@ -20,6 +22,7 @@
             max-width: 2048px;
             height: 100vh;
             max-height: 1120px;
+            position: relative;
         }
         iframe {
             width: 100%;
@@ -31,12 +34,11 @@
 <body>
     <div class="game-container">
         <iframe 
-            frameborder="0" 
-            src="https://itch.io/embed/2345307?dark=true&linkback=true" 
-            allowfullscreen 
-            width="2048" 
-            height="1120">
-            <a href="https://ryanconnolly.itch.io/snowblasters">Play Snow Blasters on itch.io</a>
+            src="https://ryanconnolly.itch.io/snowblasters"
+            title="Snow Blasters"
+            allowfullscreen
+            allow="cross-origin-isolated; cross-origin-embedder-policy; shared-array-buffer"
+            sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms allow-popups">
         </iframe>
     </div>
 </body>
